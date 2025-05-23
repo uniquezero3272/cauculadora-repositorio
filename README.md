@@ -1,4 +1,25 @@
 <script>
+      //funçao para adicionar valor 
+     function adicionar(valor){
+               document.getElementById("visor").value +=valor;
+     }
+     //funçao para limpar 
+      function limpar (){
+        document.getElementbyId().value ="";
+
+      }
+      //funçao calcular
+      function calcular (){
+        document.getElementbyId(visor).value ="";
+        try{{
+            
+           visor.value = eval(visor.value);
+        }catch(error){
+
+           visor.value = "error";
+        }
+            
+      }
 </script>
 <style>
     .botao{
@@ -61,4 +82,3 @@
 <button class="botaoooo" onclick="calcular();">=</button>
 </fieldset>
 </body
-
